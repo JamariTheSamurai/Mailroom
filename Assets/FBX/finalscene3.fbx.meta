@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 82c7235e3d1124c4da075444909e0ba3
+timeCreated: 1517169796
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Backwall_accentplates
+    100002: Camera.001
+    100004: characterARMS
+    100006: characterBODY
+    100008: DecorPipes_backwall
+    100010: DecorPipes_frontfloor
+    100012: DecorPipes_leftwall
+    100014: DecorPipes_rightwall
+    100016: EntranceBox
+    100018: ExitBox
+    100020: //RootNode
+    100022: Pipe1
+    100024: Pipe1_Cage
+    100026: Pipe2
+    100028: Pipe2_Cage
+    100030: Pipe3
+    100032: Pipe3_Cage
+    100034: Pipe4
+    100036: Pipe4_Cage
+    100038: Pipepad1
+    100040: PipePad2
+    100042: PipePad3
+    100044: PipePad4
+    100046: Rollerframe_front
+    100048: Rollerframe_side
+    100050: RollersFront
+    100052: RollersSide
+    100054: Room_BackWall
+    100056: Room_Floor
+    100058: Room_SideWalls
+    400000: Backwall_accentplates
+    400002: Camera.001
+    400004: characterARMS
+    400006: characterBODY
+    400008: DecorPipes_backwall
+    400010: DecorPipes_frontfloor
+    400012: DecorPipes_leftwall
+    400014: DecorPipes_rightwall
+    400016: EntranceBox
+    400018: ExitBox
+    400020: //RootNode
+    400022: Pipe1
+    400024: Pipe1_Cage
+    400026: Pipe2
+    400028: Pipe2_Cage
+    400030: Pipe3
+    400032: Pipe3_Cage
+    400034: Pipe4
+    400036: Pipe4_Cage
+    400038: Pipepad1
+    400040: PipePad2
+    400042: PipePad3
+    400044: PipePad4
+    400046: Rollerframe_front
+    400048: Rollerframe_side
+    400050: RollersFront
+    400052: RollersSide
+    400054: Room_BackWall
+    400056: Room_Floor
+    400058: Room_SideWalls
+    2000000: Camera.001
+    2100000: Base
+    2100002: Accetn
+    2100004: No Name
+    2300000: Backwall_accentplates
+    2300002: characterARMS
+    2300004: characterBODY
+    2300006: DecorPipes_backwall
+    2300008: DecorPipes_frontfloor
+    2300010: DecorPipes_leftwall
+    2300012: DecorPipes_rightwall
+    2300014: EntranceBox
+    2300016: ExitBox
+    2300018: Pipe1
+    2300020: Pipe1_Cage
+    2300022: Pipe2
+    2300024: Pipe2_Cage
+    2300026: Pipe3
+    2300028: Pipe3_Cage
+    2300030: Pipe4
+    2300032: Pipe4_Cage
+    2300034: Pipepad1
+    2300036: PipePad2
+    2300038: PipePad3
+    2300040: PipePad4
+    2300042: Rollerframe_front
+    2300044: Rollerframe_side
+    2300046: RollersFront
+    2300048: RollersSide
+    2300050: Room_BackWall
+    2300052: Room_Floor
+    2300054: Room_SideWalls
+    3300000: Backwall_accentplates
+    3300002: characterARMS
+    3300004: characterBODY
+    3300006: DecorPipes_backwall
+    3300008: DecorPipes_frontfloor
+    3300010: DecorPipes_leftwall
+    3300012: DecorPipes_rightwall
+    3300014: EntranceBox
+    3300016: ExitBox
+    3300018: Pipe1
+    3300020: Pipe1_Cage
+    3300022: Pipe2
+    3300024: Pipe2_Cage
+    3300026: Pipe3
+    3300028: Pipe3_Cage
+    3300030: Pipe4
+    3300032: Pipe4_Cage
+    3300034: Pipepad1
+    3300036: PipePad2
+    3300038: PipePad3
+    3300040: PipePad4
+    3300042: Rollerframe_front
+    3300044: Rollerframe_side
+    3300046: RollersFront
+    3300048: RollersSide
+    3300050: Room_BackWall
+    3300052: Room_Floor
+    3300054: Room_SideWalls
+    4300000: PipePad4
+    4300002: PipePad3
+    4300004: PipePad2
+    4300006: Pipepad1
+    4300008: Pipe4
+    4300010: Pipe4_Cage
+    4300012: Pipe3_Cage
+    4300014: Pipe3
+    4300016: Pipe2
+    4300018: Pipe2_Cage
+    4300020: Pipe1_Cage
+    4300022: Pipe1
+    4300024: Room_BackWall
+    4300026: Room_Floor
+    4300028: RollersSide
+    4300030: DecorPipes_rightwall
+    4300032: DecorPipes_backwall
+    4300034: DecorPipes_frontfloor
+    4300036: Backwall_accentplates
+    4300038: DecorPipes_leftwall
+    4300040: ExitBox
+    4300042: Rollerframe_side
+    4300044: EntranceBox
+    4300046: Rollerframe_front
+    4300048: RollersFront
+    4300050: Room_SideWalls
+    4300052: characterARMS
+    4300054: characterBODY
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
