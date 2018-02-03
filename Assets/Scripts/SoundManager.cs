@@ -6,9 +6,12 @@ using UnityEngine.Audio;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource _playerFailure;
-    public AudioSource music;
+    public AudioSource _BGmusic;
     public AudioSource _playerSuccess;
-    public AudioClip _gameOver;
+    public AudioSource _gameOver;
+    public AudioClip _one;
+    public AudioClip _two;
+    public AudioClip _three;
 
     private void Awake()
     {
@@ -39,11 +42,30 @@ public class SoundManager : MonoBehaviour
     }
     public void GameLost()
     {
-        music.clip = _gameOver;
+        _gameOver.Play();
     }
 
     private void Update()
     {
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            _BGmusic.Stop();
+            _BGmusic.clip = _one;
+            _BGmusic.Play();
+        }
 
+        if (Input.GetKeyUp(KeyCode.K))
+        {
+            _BGmusic.Stop();
+            _BGmusic.clip = _two;
+            _BGmusic.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.L))
+        {
+            _BGmusic.Stop();
+            _BGmusic.clip = _three;
+            _BGmusic.Play();
+        }
     }
 }
