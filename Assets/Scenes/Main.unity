@@ -1834,7 +1834,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4514094579991930, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.23
+      value: 3.27
       objectReference: {fileID: 0}
     - target: {fileID: 4514094579991930, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1846,7 +1846,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4514094579991930, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4514094579991930, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1854,7 +1854,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4514094579991930, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4514094579991930, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
       propertyPath: m_RootOrder
@@ -1893,7 +1893,7 @@ Prefab:
     - target: {fileID: 54057703979414572, guid: 96253077d17605c40a7fa000b99d521d,
         type: 2}
       propertyPath: m_Mass
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 23285490701861180, guid: 96253077d17605c40a7fa000b99d521d,
         type: 2}
@@ -1925,6 +1925,25 @@ Prefab:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: f982a623808364ef68d76c42aba5dac2, type: 2}
+    - target: {fileID: 54057703979414572, guid: 96253077d17605c40a7fa000b99d521d,
+        type: 2}
+      propertyPath: m_Drag
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 54057703979414572, guid: 96253077d17605c40a7fa000b99d521d,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 54057703979414572, guid: 96253077d17605c40a7fa000b99d521d,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514094579991930, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96253077d17605c40a7fa000b99d521d, type: 2}
   m_IsPrefabParent: 0
