@@ -21,15 +21,15 @@ public class PlayerGrabTry2 : MonoBehaviour
     {
         if (boxInFront != null)
         {
-            if (Input.GetAxis("Jump") > 0)
+            if (Input.GetButtonDown("Jump"))
             {
                 if (!somethingGrabbed)
                 {
-                    boxInFront.transform.parent = player.transform;
-                    boxChild = player.transform.GetChild(2).gameObject;
-                    boxChild.transform.position = transform.position;
-                    boxChild.SendMessage("Grabbed");
                     somethingGrabbed = true;
+                    boxChild = boxInFront;
+                    boxChild.SendMessage("Grabbed");
+                    boxChild.transform.parent = player.transform;
+                    boxChild.transform.position = transform.position;
                 }
                 else
                 {
@@ -39,10 +39,6 @@ public class PlayerGrabTry2 : MonoBehaviour
                 }
 
             }
-            
-        }
-        else if (boxInFront == null)
-        {
             
         }
         
@@ -70,10 +66,23 @@ public class PlayerGrabTry2 : MonoBehaviour
 	        other.tag == "SpyMail" ||
 	        other.tag == "VirusMail")
 	    {
-            boxInFront = null;
-	        
+	        StartCoroutine(EasyHandling());
+
 	    }
 
 
+    }
+
+    IEnumerator EasyHandling()
+    {
+        if (!somethingGrabbed)
+        {
+            yield return new WaitForSeconds(0.4f);
+            boxInFront = null;            
+        }
+        else if (somethingGrabbed)
+        {
+            boxInFront = boxChild;
+        }
     }
 }

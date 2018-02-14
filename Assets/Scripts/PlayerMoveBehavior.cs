@@ -4,39 +4,48 @@ using UnityEngine;
 
 public class PlayerMoveBehavior : MonoBehaviour
 {
-    private int walkSpeed = 8;
-    public Transform top;
-    public Transform bottom;
-    public Transform left;
-    public Transform right;
-	void Start ()
-	{
+    Vector3 movement;
+    float speed = 8f;
+    Rigidbody playerRigidbody;
 
-	}
-	
-	void Update ()
+    private void Awake()
     {
-        if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            transform.Translate(Vector3.back * walkSpeed * Time.deltaTime, Space.World);
-            transform.LookAt(bottom);
-        }
-        else if (Input.GetAxisRaw("Vertical") > 0)
-        {
-            transform.Translate(Vector3.forward * walkSpeed * Time.deltaTime, Space.World);
-            transform.LookAt(top);
+        playerRigidbody = GetComponent<Rigidbody>();
+    }
 
-        }
+    void Start()
+    {
+        movement = this.transform.position;
+        playerRigidbody.position = this.transform.position;
+        playerRigidbody.rotation = this.transform.rotation;
+    }
 
-        if (Input.GetAxisRaw("Horizontal") < 0)
+    private void FixedUpdate()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+
+        if (h != 0 || v != 0)
         {
-            transform.Translate(Vector3.left * walkSpeed * Time.deltaTime, Space.World);
-            transform.LookAt(left);
+            Move(h, v);
+            Rotate();
         }
-        else if (Input.GetAxisRaw("Horizontal") > 0)
-        {
-            transform.Translate(Vector3.right * walkSpeed * Time.deltaTime, Space.World);
-            transform.LookAt(right);
-        }
+       // Debug.Log("H is: " + h + "\nV is: " + v);
+    }
+
+    private void Move(float h, float v)
+    {
+        movement.Set(h, 0f, v);
+
+        movement = /* movement.normalized */ movement * speed * Time.deltaTime;
+
+        playerRigidbody.MovePosition(movement + playerRigidbody.position);
+    }
+
+    private void Rotate()
+    {
+        Quaternion rot = Quaternion.LookRotation(movement);
+        //playerRigidbody.MoveRotation(rot);
+        playerRigidbody.MoveRotation(Quaternion.Lerp(playerRigidbody.rotation, rot, 0.5f));
     }
 }
