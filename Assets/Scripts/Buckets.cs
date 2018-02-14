@@ -21,22 +21,20 @@ public class Buckets : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         string package = other.tag;
-        if (package == ReportBucketType(types)) {
-            SuckPackage(other.gameObject);
-           
-            soundManager.PlaySuccess();
-            soundManager.SendMessage("MailDropped", package);
-        }
-        else if(other.tag == "SpamMail" && (types == BucketTypes.Trash))
+        if(other.tag == "SpamMail" && (types == BucketTypes.Trash))
         {
-            soundManager.PlaySuccess();
             virusOrNah = false;
-            soundManager.SendMessage("MailDropped", package);
         }
         else if (other.tag == "VirusMail" && (types == BucketTypes.Trash))
         {
-            soundManager.PlaySuccess();
             virusOrNah = true;
+        }
+
+        if (package == ReportBucketType(types)) 
+        {
+            SuckPackage(other.gameObject);
+           
+            soundManager.PlaySuccess();
             soundManager.SendMessage("MailDropped", package);
         }
         else if(other.tag == "Player")

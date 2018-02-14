@@ -13,6 +13,6 @@ public class StartGameBehavior : MonoBehaviour
 
     public void MainStart()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Survival");
     }
 }

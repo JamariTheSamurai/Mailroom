@@ -34,7 +34,7 @@ public class GameControllerBehavior : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                SceneManager.LoadScene("Main");
+                SceneManager.LoadScene("Survival");
             }
         }
     }

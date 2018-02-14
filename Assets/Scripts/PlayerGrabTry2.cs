@@ -11,7 +11,7 @@ public class PlayerGrabTry2 : MonoBehaviour
 
     public GameObject player;
     private GameObject boxChild;
-    private GameObject boxInFront;
+    public GameObject boxInFront;
 
     void Start ()
     {
@@ -41,10 +41,14 @@ public class PlayerGrabTry2 : MonoBehaviour
             }
             
         }
+        else if (boxInFront == null)
+        {
+            
+        }
         
     }
 	
-	public void OnTriggerStay (Collider other)
+	public void OnTriggerEnter (Collider other)
 	{
 	    if (other.tag == "BasicMail" ||
 	        other.tag == "SpamMail" ||
@@ -53,6 +57,20 @@ public class PlayerGrabTry2 : MonoBehaviour
 	        other.tag == "VirusMail")
 	    {
             boxInFront = other.gameObject;
+	        
+	    }
+
+
+    }	
+	public void OnTriggerExit (Collider other)
+	{
+	    if (other.tag == "BasicMail" ||
+	        other.tag == "SpamMail" ||
+	        other.tag == "LoveMail" ||
+	        other.tag == "SpyMail" ||
+	        other.tag == "VirusMail")
+	    {
+            boxInFront = null;
 	        
 	    }
 
